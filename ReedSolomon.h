@@ -7,19 +7,30 @@
 class ReedSolomon
 {
 private:
-    static int numParityChecks; //constant for the object we declare
-    static int numSymbols;
-    static int numDataSymbols;
+    //input data
+    int numParityChecks; 
+    int numSymbols;
+    int numDataSymbols;
+
+    //useful variables
     int size;
-    int* arr;
-    int* arrHelper(int size);
+    char* arr;
+    int qVal;
+
+    //mapper arrays
+
+
+    //helpful methods
+    char* arrHelper(int size);
+    int qValue(int t);
 public:
     ReedSolomon(int a, int b); //constructor for now
     ~ReedSolomon(); //destructor
-    unsigned int FieldSize() const; //this takes in the value of bitChecks computes the Galois Field Size
+    unsigned int FieldSize(int q) const; //this takes in the value of bitChecks computes the Galois Field Size
 
-
-
+    //make the polynomial that stores the data
+    void Polynomial();
+    unsigned int tValue(int e) const;
     //getters
     int getNumSymbols();
     int getParityChecks();

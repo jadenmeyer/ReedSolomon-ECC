@@ -1,6 +1,14 @@
 {
   "version": "0.2.0",
   "configurations": [
+    
+    {
+      "type": "java",
+      "name": "app",
+      "request": "launch",
+      "mainClass": "app",
+      "projectName": "CJAVcryptproj_c04206b7"
+    },
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",

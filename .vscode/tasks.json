@@ -10,6 +10,7 @@
           "-g",
           "${file}",                            // Compiling the current file
           "C:\\CJAVcryptproj\\ReedSolomon.cpp",   // Explicitly include ReedSolomon.cpp
+          "C:\\CJAVcryptproj\\NewRS.cpp",
           "-o",
           "${fileDirname}\\${fileBasenameNoExtension}.exe"
         ],
